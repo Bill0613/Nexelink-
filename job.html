@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>加入我們 | Nexelink</title>
+    <link rel="stylesheet" href="web.css" />
+    <script src="web.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* 簡易內嵌 CSS 範例，之後可移到 web.css */
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-image: url("--");
+      }
+      main {
+        max-width: 900px;
+        margin: 40px auto 80px auto;
+        padding: 0 20px;
+        padding-top: 60px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      }
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: #222;
+      }
+      .job-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .job-item {
+        border-bottom: 1px solid #ddd;
+        padding: 20px 0;
+      }
+      .job-item:last-child {
+        border-bottom: none;
+      }
+      .job-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 6px;
+      }
+      .job-info {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      .job-desc {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+      }
+      .apply-btn {
+        display: inline-block;
+        padding: 10px 18px;
+        background-color: #ff8800;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+      .apply-btn:hover,
+      .apply-btn:focus {
+        background-color: #000000;
+      }
+      footer {
+        text-align: center;
+        padding: 30px 10px;
+        color: #999;
+        font-size: 0.9rem;
+        border-top: 1px solid #ddd;
+        margin-top: 60px;
+      }
+    </style>
+</head>
+<body>
+  <!-- 你的 header 這邊保留 -->
+  <header>
+    <label
+      class="menu-btn"
+      id="menu-btn"
+      aria-label="切換選單"
+      tabindex="0"
+      role="button"
+    >
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+    </label>
+    <nav class="navbar">
+      <a href="web.html" class="NEXELINK">
+        <img
+          class="logo"
+          src="title logo.jpg"
+          width="60"
+          height="60"
+          alt="Nexelink Logo"
+        />
+        <h2 class="title">NEXELINK</h2>
+      </a>
+      <ul id="nav-menu">
+        <li><a href="about.html">關於</a></li>
+        <li><a href="service.html">服務</a></li>
+        <li><a href="#">作品</a></li>
+        <li><a href="job.html">接觸</a></li>
+        <li><a href="contact.html">聯繫</a></li>
+        <li><a href="sign in.html">登入/註冊</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1><i class="fa-solid fa-user-doctor"></i>加入我們 - 職缺列表</h1>
+
+    <ul class="job-list">
+      <li class="job-item">
+        <div class="job-title">前端工程師 (Frontend Developer)</div>
+        <div class="job-info">
+          地點：遠端 &nbsp;|&nbsp; 工作性質：全職 &nbsp;|&nbsp; 經驗：2年以上
+        </div>
+        <div class="job-desc">
+          主要負責網站前端功能開發，與設計師及後端工程師協作，優化用戶體驗。
+          熟悉 Git Hub、HTML、CSS、JavaScript、React 或 Vue。
+        </div>
+        <a href="contact.html" class="apply-btn" aria-label="應徵前端工程師">
+          我要應徵
+        </a>
+      </li>
+
+      <li class="job-item">
+        <div class="job-title">3D動畫師 (Animator Artist)</div>
+        <div class="job-info">
+          地點：遠端 &nbsp;|&nbsp; 工作性質：專案制 &nbsp;|&nbsp; 經驗：不限
+        </div>
+        <div class="job-desc">
+          需具備 Blender 軟體使用經驗，能配合專案需求佳。
+        </div>
+        <a href="contact.html" class="apply-btn" aria-label="應徵視覺特效工程師">
+          我要應徵
+        </a>
+      </li>
+
+      <li class="job-item">
+        <div class="job-title">影片剪輯師(短片)</div>
+        <div class="job-info">
+          地點：遠端 &nbsp;|&nbsp; 工作性質：專案制 &nbsp;|&nbsp; 經驗：兩年工作經驗
+        </div>
+        <div class="job-desc">
+          需具備 DavinciResolve 或 Capcut 剪輯軟體經驗，能配合專案需求佳。
+        </div>
+        <a href="contact.html" class="apply-btn" aria-label="應徵視覺特效工程師">
+          我要應徵
+        </a>
+      </li>
+
+      <li class="job-item">
+        <div class="job-title">後端工程師 (Backend Developer)</div>
+        <div class="job-info">
+          地點：遠端 &nbsp;|&nbsp; 工作性質：全職 &nbsp;|&nbsp; 經驗：3年以上
+        </div>
+        <div class="job-desc">
+          熟悉 Node.js、Python 或其他後端語言，負責 API 設計與維護，保障系統穩定與安全。
+        </div>
+        <a href="contact.html" class="apply-btn" aria-label="應徵後端工程師">
+          我要應徵
+        </a>
+      </li>
+    </ul>
+  </main>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="question.html">常見問題</a>
+      <a href="https://gamma.app/docs/NEXELINK-mepkmdq8zrbj7z7?mode=doc">隱私權政策</a>
+      <a href="https://gamma.app/docs/NEXELINK--i6t5t5z3bpfel26?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExaUE4ZkZodFpmbkpabG5URgEeBTD_wd0IAbLJGxiPYz5Auaj9s031nMWi3YmV5gMuDX6ty8_Em0x5GvrZcFI_aem_8VRCNQbnOlO8H0BIaLGS7Q&mode=doc">素材使用條款</a>
+    </div>
+    
+    <div class="footer-social">
+      <a href="https://www.instagram.com/nexelink/">
+        <img src="icons8-instagram-96.png" alt="Instagram" class="IG">
+      </a>
+      <a href="https://linevoom.line.me/user/_dUforMMLntzCcbKlGOQij8IQUocTMC0-wbtomYA">
+        <img src="icons8-line-128.png" alt="Line" class="line">
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2025 NEXELINK All Rights Reserved</p>
+  </div>
+</footer>
+</body>
+</html>

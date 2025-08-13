@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡|Nexelink</title>
+     <link rel="stylesheet" href="web.css">
+    <script src="web.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 基本字體跟背景 */
+body {
+  font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
+  background-color: #fff;
+  color: #111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 主體區塊 */
+main {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* 標題 */
+h1{
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.06em;
+    color: #111;
+    position: relative;
+    top: 1em;
+}
+/* 副標或說明 */
+p.lead {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* 表單 */
+form {
+  display: flex;
+  position: relative;
+  left: 46em;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+input, textarea {
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  border: 1.6px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  color: #111;
+  width: 50%; /* 撐滿表單寬度 */
+  max-width: 30%; /* 不會超出容器 */
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%; /* 讓輸入框跟父層一樣寬 */
+    max-width: 400px; /* 限制最大寬度，避免平板太長 */
+    box-sizing: border-box; /* 避免 padding 影響寬度 */
+  background-color: #fafafa;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #000;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* 送出按鈕 */
+button {
+  padding: 1rem 2.8rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  position: relative;
+  right: 38em;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+button:hover, button:focus {
+  background-color: #222;
+  transform: scale(1.05);
+  outline: none;
+}
+@media (max-width: 768px) {
+  main {
+    margin: 1.5rem;
+    padding: 1rem;
+  }
+  input, textarea {
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+  form {
+    position: static; /* 取消固定位置 */
+    left: 0;
+    padding: 0 1rem;
+    width: 100%;
+    align-items: center; /* 置中 */
+  }
+
+  button {
+    position: static; /* 取消偏移 */
+    width: 30%; /* 滿版按鈕（看需求） */
+    max-width: 300px; /* 限制最大寬度比較美觀 */
+    right: 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+     <label class="menu-btn" id="menu-btn" aria-label="切換選單" tabindex="0" role="button">
+    <span class="bar1"></span>
+    <span class="bar2"></span>
+    <span class="bar3"></span>
+  </label>
+  <nav class="navbar">
+    <a href="web.html" class="NEXELINK"><img class="logo" src="title logo.jpg"width="60" height="60"><h2 class="title">NEXELINK</h2></a>
+    <ul id="nav-menu">
+      <li><a href="about.html">關於</a></li>
+      <li><a href="#">服務</a></li>
+      <li><a href="#">作品</a></li>
+      <li><a href="job.html">接觸</a></li>
+      <li><a href="contact.html">聯繫</a></li>
+      <li><a href="sign in.html">登入/註冊</a></li>
+    </ul>
+  </nav>
+  <h1><i class="fas fa-envelope"></i>聯絡我們</h1>
+    <p class="lead">有任何問題或合作意向，歡迎透過下方表單與我們聯繫，我們會盡快回覆您！</p>
+    <form action="#" method="post" aria-label="聯絡表單">
+      <label for="name">姓名</label>
+      <input type="text" id="name" name="name" required placeholder="請輸入您的姓名" />
+
+      <label for="email">電子郵件</label>
+      <input type="email" id="email" name="email" required placeholder="請輸入有效的電子郵件" />
+      <label for="message">訊息內容</label>
+      <textarea id="message" name="message" required placeholder="請輸入您的訊息"></textarea>
+
+      <button type="submit"><i class="fas fa-paper-plane"></i>送出</button>
+    <div>
+      <p><i class="fas fa-phone"></i>0966-434-300</p>
+      <p><i class="fas fa-clock"></i>服務時間：週一至週日 8:00 - 24:00</p>
+    </div>    
+    </form>
+  </main>
+  <footer class="footer">
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="question.html">常見問題</a>
+      <a href="https://gamma.app/docs/NEXELINK-mepkmdq8zrbj7z7?mode=doc">隱私權政策</a>
+      <a href="https://gamma.app/docs/NEXELINK--i6t5t5z3bpfel26?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExaUE4ZkZodFpmbkpabG5URgEeBTD_wd0IAbLJGxiPYz5Auaj9s031nMWi3YmV5gMuDX6ty8_Em0x5GvrZcFI_aem_8VRCNQbnOlO8H0BIaLGS7Q&mode=doc">素材使用條款</a>
+    </div>
+    
+    <div class="footer-social">
+      <a href="https://www.instagram.com/nexelink/">
+        <img src="icons8-instagram-96.png" alt="Instagram" class="IG">
+      </a>
+      <a href="https://linevoom.line.me/user/_dUforMMLntzCcbKlGOQij8IQUocTMC0-wbtomYA">
+        <img src="icons8-line-128.png" alt="Line" class="line">
+      </a>
+    </div>
+    
+    <p class="footer-copy">&copy; 2025 NEXELINK All Rights Reserved</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁|Nexelink</title>
+    <link rel="stylesheet" href="web.css">
+    <script src="web.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      .slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 400%; /* 4 張圖片 × 100% */
+    height: 100%;
+    transition: transform 2s ease-in-out;
+}
+
+.slides img {
+    width: 25%; /* 每張圖寬度 = 100% / 4 */
+    height: 100vh;
+    object-fit: cover;
+}
+    .btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 50%;
+        user-select: none;
+    }
+    .prev { 
+        left: 10px;
+     }
+    .next { 
+        right: 10px;
+         }
+         .what {
+  position: relative;
+  height: 50em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff; /* 文字顏色，確保清楚 */
+  overflow: hidden;
+}
+.what .bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("c9589549-c00c-4174-bff4-4d1228afd50e.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(4px);
+  z-index: 1;
+}
+.what .content {
+  position: relative;
+  top: -4em;
+  font-weight: 200;
+  z-index: 200;  
+  padding: 0 1rem;
+}
+.le{
+    position: relative;
+  height: 50em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff; /* 文字顏色，確保清楚 */
+  overflow: hidden;
+}
+.bg1{
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("1_1.1.1.png");
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(6px);
+  z-index: 1;
+}
+.content1{
+  position: relative;
+  top: -4em;
+  color: #ffffff;
+  font-weight: bold;
+  z-index: 200;  
+  padding: 0 1rem;
+}
+.button{
+        border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+    }
+    .button:hover{
+        background-color:#000000;
+        transition: 0.3s ease-in;
+        border: none;
+    }
+    .bus{
+      color: #ffffff;
+      text-decoration: none;
+    }
+    
+    </style>
+</head>
+<body>
+    
+  <label class="menu-btn" id="menu-btn" aria-label="切換選單" tabindex="0" role="button">
+    <span class="bar1"></span>
+    <span class="bar2"></span>
+    <span class="bar3"></span>
+  </label>
+
+  
+  <nav class="navbar">
+    <a href="web.html" class="NEXELINK"><img class="logo" src="title logo.jpg"width="60" height="60"><h2 class="title">NEXELINK</h2></a>
+    <ul id="nav-menu">
+      <li><a href="about.html">關於</a></li>
+      <li><a href="service.html">服務</a></li>
+      <li><a href="#">作品</a></li>
+      <li><a href="job.html">接觸</a></li>
+      <li><a href="contact.html">聯繫</a></li>
+      <li><a href="sign in.html">登入/註冊</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="hero">
+      <div class="slider">
+    <div class="slides" id="slides">
+        <img src="staticimageLOGO.jpg" alt="1">
+        <img src="title logo.jpg" alt="2">
+        <img src="staticimageLOGO.jpg" alt="3">
+        <img src="title logo.jpg" alt="4">
+    </div>
+    <button class="btn prev" id="prev">&#10094;</button>
+    <button class="btn next" id="next">&#10095;</button>
+</div>
+    </div>
+    <div class="what">
+  <div class="bg"></div>
+  <div class="content">
+    <h2>關於Nexelink</h2>
+    <p>Nexelink 由一群熱愛設計與技術的學生組成，</p>
+    <p>我們相信每一個靈感，都能被化為能觸動人心的作品。</p>
+  </div>
+</div>
+<div class="le">
+  <div class="bg1"></div>
+  <div class="content1">
+    <p>準備好開始旅程了嗎？</p>
+    <button class="button"><a href="contact.html" class="bus">取得報價→</a></button>
+  </div>
+</div>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="question.html">常見問題</a>
+      <a href="https://gamma.app/docs/NEXELINK-mepkmdq8zrbj7z7?mode=doc">隱私權政策</a>
+      <a href="https://gamma.app/docs/NEXELINK--i6t5t5z3bpfel26?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExaUE4ZkZodFpmbkpabG5URgEeBTD_wd0IAbLJGxiPYz5Auaj9s031nMWi3YmV5gMuDX6ty8_Em0x5GvrZcFI_aem_8VRCNQbnOlO8H0BIaLGS7Q&mode=doc">素材使用條款</a>
+    </div>
+    
+    <div class="footer-social">
+      <a href="https://www.instagram.com/nexelink/">
+        <img src="icons8-instagram-96.png" alt="Instagram" class="IG">
+      </a>
+      <a href="https://linevoom.line.me/user/_dUforMMLntzCcbKlGOQij8IQUocTMC0-wbtomYA">
+        <img src="icons8-line-128.png" alt="Line" class="line">
+      </a>
+    </div>
+    
+    <p class="footer-copy">&copy; 2025 NEXELINK All Rights Reserved</p>
+  </div>
+</footer>
+
+
+ 
+  </section>
+  <script>
+    const slides = document.getElementById("slides");
+    const prev = document.getElementById("prev");
+    const next = document.getElementById("next");
+    const totalSlides = slides.children.length;
+    let index = 0;
+    let startX = 0;
+    let endX = 0;
+
+    function showSlide(i) {
+  if (i < 0) index = totalSlides - 1;  // 從第一張往前跳就跳到最後一張
+  else if (i >= totalSlides) index = 0; // 從最後一張往後跳就跳回第一張
+  else index = i;
+  slides.style.transform = `translateX(${-index * 100}%)`;
+}
+
+    prev.addEventListener("click", () => showSlide(index - 1));
+    next.addEventListener("click", () => showSlide(index + 1));
+
+    // 手機滑動事件
+    slides.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+    slides.addEventListener("touchend", e => {
+        endX = e.changedTouches[0].clientX;
+        if (startX - endX > 50) showSlide(index + 1); // 往左滑
+        if (endX - startX > 50) showSlide(index - 1); // 往右滑
+    });
+
+    // 自動播放
+    setInterval(() => showSlide(index + 1), 6000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>常見問題 | Nexelink</title>
+<link rel="stylesheet" href="web.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="web.js" defer></script>
+<style>
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f8fa;
+    color: #222;
+    margin: 0;
+    padding-top: 80px; /* 導覽列空間 */
+  }
+
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .faq {
+    margin-bottom: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+
+  .faq-question {
+    padding: 1rem 1.5rem;
+    background: #222;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .faq-question::after {
+    content: "\f078"; /* Font Awesome angle-down */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .faq.open .faq-question::after {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 1rem 1.5rem;
+    background: #fafafa;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .faq.open .faq-answer {
+    display: block;
+  }
+  .footer{
+  background: #222;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  top: 16em; 
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #ffffff;
+  }
+  @media (max-width:768px){
+    .footer{
+    position: relative;
+    top: 6em; 
+    }
+  }
+</style>
+</head>
+<body>
+<label class="menu-btn" id="menu-btn" aria-label="切換選單" tabindex="0" role="button">
+    <span class="bar1"></span>
+    <span class="bar2"></span>
+    <span class="bar3"></span>
+  </label>
+
+  
+  <nav class="navbar">
+    <a href="web.html" class="NEXELINK"><img class="logo" src="title logo.jpg"width="60" height="60"><h2 class="title">NEXELINK</h2></a>
+    <ul id="nav-menu">
+      <li><a href="about.html">關於</a></li>
+      <li><a href="service.html">服務</a></li>
+      <li><a href="#">作品</a></li>
+      <li><a href="job.html">接觸</a></li>
+      <li><a href="contact.html">聯繫</a></li>
+      <li><a href="sign in.html">登入/註冊</a></li>
+    </ul>
+  </nav>
+<main>
+  <h1>常見問題</h1>
+
+  <div class="faq">
+    <div class="faq-question">1. 你們提供哪些服務？</div>
+    <div class="faq-answer">
+      我們提供廣告產品動畫、網站開發、視覺設計、技術支援、主機代管以及影片剪輯服務。
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">2. 服務價格怎麼計算？</div>
+    <div class="faq-answer">
+      價格會依照專案需求、複雜度與時程進行報價，您可以透過「聯絡我們」頁面與我們討論。
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">3. 完成專案需要多久？</div>
+    <div class="faq-answer">
+      視專案範圍而定，一般來說從需求確認到交付大約需要 2-6 週。
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-question">4. 可以客製化功能嗎？</div>
+    <div class="faq-answer">
+      當然可以！我們會根據您的需求進行專屬開發。
+    </div>
+  </div>
+</main>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="question.html">常見問題</a>
+      <a href="https://gamma.app/docs/NEXELINK-mepkmdq8zrbj7z7?mode=doc">隱私權政策</a>
+      <a href="https://gamma.app/docs/NEXELINK--i6t5t5z3bpfel26?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExaUE4ZkZodFpmbkpabG5URgEeBTD_wd0IAbLJGxiPYz5Auaj9s031nMWi3YmV5gMuDX6ty8_Em0x5GvrZcFI_aem_8VRCNQbnOlO8H0BIaLGS7Q&mode=doc">素材使用條款</a>
+    </div>
+    
+    <div class="footer-social">
+      <a href="https://www.instagram.com/nexelink/">
+        <img src="icons8-instagram-96.png" alt="Instagram" class="IG">
+      </a>
+      <a href="https://linevoom.line.me/user/_dUforMMLntzCcbKlGOQij8IQUocTMC0-wbtomYA">
+        <img src="icons8-line-128.png" alt="Line" class="line">
+      </a>
+    </div>
+    
+    <p class="footer-copy">&copy; 2025 NEXELINK All Rights Reserved</p>
+  </div>
+</footer>
+<script>
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      q.parentElement.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
